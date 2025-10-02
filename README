@@ -6,7 +6,6 @@ the cdsapi. Details can be found at the following link:
 
 https://cds.climate.copernicus.eu/how-to-api
 
-
 * cdsapirc
 Needed to authenticate with ECMWF CDS data servers to allow
 download. This is a dot-file in my your home directory

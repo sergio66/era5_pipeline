@@ -26,7 +26,11 @@ config.read(sys.argv[1])
 
 cds = cdsapi.Client()
 
-scratch_dir = "/asl/models/era5_monthly/INCOMING"
+scratch_dir = "/asl/models/era5_monthly/INCOMING"                  ## taki
+
+scratch_dir = "/home//sergio/asl/isilonX/ERA5_monthly/INCOMING/"   ## chip
+scratch_dir = "/umbc/rs/strow/asl/ERA5_monthly/INCOMING"           ## chip
+
 if os.path.exists(scratch_dir) is False:
     os.mkdir(scratch_dir)
     
