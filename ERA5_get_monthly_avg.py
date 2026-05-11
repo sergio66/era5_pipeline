@@ -11,7 +11,8 @@ import calendar
 import ERA5Queries
 import configparser
 
-sys.path.append('/home/sbuczko1/git/era5_pipeline/')
+#sys.path.append('/home/sbuczko1/git/era5_pipeline/')
+sys.path.append('/home/sergio/git/era5_pipeline/')
 
 if len (sys.argv) != 4:
     print(" Please specify config file, year, and month to retrieve (ini YYYY MM)")
@@ -26,10 +27,12 @@ config.read(sys.argv[1])
 
 cds = cdsapi.Client()
 
+###
 scratch_dir = "/asl/models/era5_monthly/INCOMING"                  ## taki
-
+###
 scratch_dir = "/home//sergio/asl/isilonX/ERA5_monthly/INCOMING/"   ## chip
 scratch_dir = "/umbc/rs/strow/asl/ERA5_monthly/INCOMING"           ## chip
+###
 
 if os.path.exists(scratch_dir) is False:
     os.mkdir(scratch_dir)

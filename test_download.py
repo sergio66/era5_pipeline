@@ -13,5 +13,6 @@ cds.retrieve('reanalysis-era5-pressure-levels', {
     "date": "2024-09-01",
     "time": "all",
     "format": "netcdf"
-}, '/asl/s1/sergio/JUNK/download_test.nc')
+}, '/home/sergio/nogit/JUNK/download_test_ERA5.nc')
 
+## no longer putting into /asl/s1/sergio/JUNK/download_test.nc
