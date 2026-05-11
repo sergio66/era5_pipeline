@@ -18,4 +18,4 @@ do
 
 done < "$driver_file"
 
-    
+echo "DONE, check eg /umbc/rs/strow/asl/ERA5_monthly/INCOMING/ and move files to appropriate 20XY/ directories"
